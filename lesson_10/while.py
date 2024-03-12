@@ -16,12 +16,14 @@ print("end ehile loop")
 #         print(i)
 
 import random
-a = random.randrange(1, 6)
+
+a = random.randrange(1, 8)
 guess_num = int(input("Guess the number: "))
 counter = 0
 
-while(a != guess_num):
-    counter =+ 1
-    print(f'Congratulation your number is matching. The number is {a} and the counter is {counter}')
+while a != guess_num:
+    counter += 1
+    print(f'Wrong guess. Try again.')
     guess_num = int(input("Guess the number: "))
-print(f'You guessed the wrong number: {a} and the counter is {counter}')
+
+print(f'Congratulations! You guessed the correct number {a} in {counter} attempts.')
