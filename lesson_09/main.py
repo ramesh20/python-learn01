@@ -28,7 +28,7 @@ third_data = {1, 2, 3, 4, 5}
 
 type_list = list(second_data)
 type_list.pop([2])
-# del type_list[2]  
+# del type_list[2]
 
 print(type(second_data))
 
